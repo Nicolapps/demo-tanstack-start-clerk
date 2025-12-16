@@ -73,6 +73,17 @@ function App() {
                 START
               </span>
             </h1>
+
+            <div className="bg-white p-8 rounded">
+              <SignedIn>
+                <p>You are signed in</p>
+                <UserButton />
+              </SignedIn>
+              <SignedOut>
+                <p>You are signed out</p>
+                <SignInButton />
+              </SignedOut>
+            </div>
           </div>
           <p className="text-2xl md:text-3xl text-gray-300 mb-4 font-light">
             The framework for next generation AI applications
@@ -119,16 +130,6 @@ function App() {
           ))}
         </div>
       </section>
-
-      <h1>Index Route</h1>
-      <SignedIn>
-        <p>You are signed in</p>
-        <UserButton />
-      </SignedIn>
-      <SignedOut>
-        <p>You are signed out</p>
-        <SignInButton />
-      </SignedOut>
     </div>
   );
 }
